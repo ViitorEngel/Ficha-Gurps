@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Ficha Gurps</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      </head>
+
+  <body>
+
+  <script src="script.js"></script>
+    
+  <div class="parte-funcional">
+
+      <div class="ajuste-infos-e-pontos"> 
+        <div class="infos-basicas">
+          <h3 class="info-basica-input">Nome</h3>
+          <input type="text" id="nome" placeholder="Nome do personagem">
+          <h3 class="info-basica-input">Jogador</h3>
+          <input type="text" id="jogador" placeholder="Nome do jogador">
+        </div> 
+        <br>   
+        <div class="infos-pontos">
+          <h5>Pontos totais</h5>
+          <input type="text" id="ptotais" class="ponto-input">
+          <h5>Pontos gastos</h5>
+          <input type="text" id="ptgastos" class="ponto-input">
+          <h5>Pontos restantes</h5>
+          <input type="text" id="ptrestantes" class="ponto-input">
+        </div>
+      </div>
+    
+      <div class="ajuste-atributos-basicos">
+        <div class="atributos-primarios">
+          <h5>ST</h5>
+          <h5>DX</h5>
+          <h5>IQ</h5>
+          <h5>HT</h5>
+        </div>
+        <div class="atributos-secundarios">
+          <h5>HP</h5>
+          <h5>WILL</h5>
+          <h5>PER</h5>
+          <h5>FP</h5>
+        </div>
+        <div class="atributo-primario-input-box">
+              <input type="text" id="primario1" class="atributo-primario-input-box-individual"><br><br>
+              <input type="text" id="primario2" class="atributo-primario-input-box-individual"><br><br>
+              <input type="text" id="primario3" class="atributo-primario-input-box-individual"><br><br>
+              <input type="text" id="primario4" class="atributo-primario-input-box-individual">
+        </div>
+        <div class="obs-1"><h5>Temp</h5></div>
+        <div class="atributo-sec-input-box">
+          <input type="text" id="sec1" class="atributo-sec-input-box-individual">
+          <input type="text" id="sec2"  class="atributo-sec-input-box-individual"><br><br>
+          <input type="text" id="sec3"  class="atributo-sec-input-box-individual"><br><br>
+          <input type="text" id="sec4"  class="atributo-sec-input-box-individual"><br><br>
+          <input type="text" id="sec5"  class="atributo-sec-input-box-individual">
+          <input type="text" id="sec6"  class="atributo-sec-input-box-individual">
+    </div>
+
+
+      </div>
+      
+      <div class="ajuste-atributos-derivados">
+          <h5>B.Lift</h5>
+          <h5>B.Speed</h5>
+          <h5>B.Move</h5>
+          <h5>Dmg</h5>
+
+          <div class="atributo-der-input-box">
+              <input type="text" id="der1" class="atributo-der-input-box-individual"><br><br>
+              <input type="text" id="der2"  class="atributo-der-input-box-individual"><br><br>
+              <input type="text" id="der3"  class="atributo-der-input-box-individual"><br><br>
+              <input type="text" id="der4"  class="atributo-der-input-box-individual">
+              <input type="text" id="der5"  class="atributo-der-input-box-individual">
+          </div>
+          <div class="dmg-obs"><h5>Gdp</h5><h5>Bal</h5></div>
+      </div>
+
+      <div class="defesa-infos">
+          <h5>Dodge</h5>
+          <h5>Block</h5>
+          <h5>Parry</h5>
+          <h5>DR</h5>
+
+          <div class="defesa-infos-input">
+              <input type="text" id="defesa1" class="defesa-infos-input-box"><br><br>
+              <input type="text" id="defesa2"  class="defesa-infos-input-box"><br><br>
+              <input type="text" id="defesa3"  class="defesa-infos-input-box"><br><br>
+              <input type="text" id="defesa4"  class="defesa-infos-input-box"><br><br>
+          </div>
+
+      </div>
+
+      <div class="armas">
+        <h5>Arma</h5>
+        <h5>Dano</h5>
+        <h5>Alcance</h5>
+        <h5>Precisão</h5>
+        <h5>Cadência</h5>
+        <h5>Disparos</h5>
+        <h5>St</h5>
+        <h5>Parry</h5>
+
+        <div class="arma1">
+          <input type="text" class="arma-infos" id="arma1"><br><br>
+          <input type="text" class="arma-infos" id="arma2"><br><br>
+          <input type="text" class="arma-infos" id="arma3"><br><br>
+          <input type="text" class="arma-infos" id="arma4"><br><br>
+          <input type="text" class="arma-infos" id="arma5"><br><br>
+          <input type="text" class="arma-infos" id="arma6"><br><br>
+          <input type="text" class="arma-infos" id="arma7"><br><br>
+          <input type="text" class="arma-infos" id="arma8"><br><br>
+        </div>
+
+        <div class="arma2">
+          <input type="text" class="arma-infos" id="arma11"><br><br>
+          <input type="text" class="arma-infos" id="arma12"><br><br>
+          <input type="text" class="arma-infos" id="arma13"><br><br>
+          <input type="text" class="arma-infos" id="arma14"><br><br>
+          <input type="text" class="arma-infos" id="arma15"><br><br>
+          <input type="text" class="arma-infos" id="arma16"><br><br>
+          <input type="text" class="arma-infos" id="arma17"><br><br>
+          <input type="text" class="arma-infos" id="arma18"><br><br>
+        </div>
+
+        <div class="arma3">
+          <input type="text" class="arma-infos" id="arma21"><br><br>
+          <input type="text" class="arma-infos" id="arma22"><br><br>
+          <input type="text" class="arma-infos" id="arma23"><br><br>
+          <input type="text" class="arma-infos" id="arma24"><br><br>
+          <input type="text" class="arma-infos" id="arma25"><br><br>
+          <input type="text" class="arma-infos" id="arma26"><br><br>
+          <input type="text" class="arma-infos" id="arma27"><br><br>
+          <input type="text" class="arma-infos" id="arma28"><br><br>
+        </div>
+
+        <div class="arma4">
+          <input type="text" class="arma-infos" id="arma31"><br><br>
+          <input type="text" class="arma-infos" id="arma32"><br><br>
+          <input type="text" class="arma-infos" id="arma33"><br><br>
+          <input type="text" class="arma-infos" id="arma34"><br><br>
+          <input type="text" class="arma-infos" id="arma35"><br><br>
+          <input type="text" class="arma-infos" id="arma36"><br><br>
+          <input type="text" class="arma-infos" id="arma37"><br><br>
+          <input type="text" class="arma-infos" id="arma38"><br><br>
+        </div>
+
+      </div>
+
+      <div class="vantagens-desvantagens-skills-inventario">
+        <div class="vantagens">
+          <h4 class="vantagens-heading">Vantagens</h4>
+          <input type="text" class="vantagens-input" id="vantagens1"><br>
+          <input type="text" class="vantagens-input" id="vantagens2"><br>
+          <input type="text" class="vantagens-input" id="vantagens3"><br>
+          <input type="text" class="vantagens-input" id="vantagens4"><br>
+          <input type="text" class="vantagens-input" id="vantagens5"><br>
+          <input type="text" class="vantagens-input" id="vantagens6"><br>
+          <input type="text" class="vantagens-input" id="vantagens7"><br>
+          <input type="text" class="vantagens-input" id="vantagens8"><br>
+          <input type="text" class="vantagens-input" id="vantagens9"><br>
+          <input type="text" class="vantagens-input" id="vantagens10"><br>
+          <input type="text" class="vantagens-input" id="vantagens11"><br>
+          <input type="text" class="vantagens-input" id="vantagens12"><br>
+          <input type="text" class="vantagens-input" id="vantagens13"><br>
+          <input type="text" class="vantagens-input" id="vantagens14"><br>
+          <input type="text" class="vantagens-input" id="vantagens15"><br>
+          <input type="text" class="vantagens-input" id="vantagens16"><br>
+          <input type="text" class="vantagens-input" id="vantagens17"><br>
+          <input type="text" class="vantagens-input" id="vantagens18"><br>
+          <input type="text" class="vantagens-input" id="vantagens19"><br>
+          <input type="text" class="vantagens-input" id="vantagens20"><br>
+        </div>
+    
+        <div class="desvantagens">
+          <h4 class="desvantagens-heading">Desvantagens</h4>
+          <input type="text" class="desvantagens-input" id="desvantagens1"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens2"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens3"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens4"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens5"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens6"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens7"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens8"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens9"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens10"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens11"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens12"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens13"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens14"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens15"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens16"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens17"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens18"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens19"><br>
+          <input type="text" class="desvantagens-input" id="desvantagens20"><br>
+        </div>
+
+        <div class="skills">
+          <h4 class="skills-heading">Skills</h4>
+          <input type="text" class="skills-input" id="skills1"><br>
+          <input type="text" class="skills-input" id="skills2"><br>
+          <input type="text" class="skills-input" id="skills3"><br>
+          <input type="text" class="skills-input" id="skills4"><br>
+          <input type="text" class="skills-input" id="skills5"><br>
+          <input type="text" class="skills-input" id="skills6"><br>
+          <input type="text" class="skills-input" id="skills7"><br>
+          <input type="text" class="skills-input" id="skills8"><br>
+          <input type="text" class="skills-input" id="skills9"><br>
+          <input type="text" class="skills-input" id="skills10"><br>
+          <input type="text" class="skills-input" id="skills11"><br>
+          <input type="text" class="skills-input" id="skills12"><br>
+          <input type="text" class="skills-input" id="skills13"><br>
+          <input type="text" class="skills-input" id="skills14"><br>
+          <input type="text" class="skills-input" id="skills15"><br>
+          <input type="text" class="skills-input" id="skills16"><br>
+          <input type="text" class="skills-input" id="skills17"><br>
+          <input type="text" class="skills-input" id="skills18"><br>
+          <input type="text" class="skills-input" id="skills19"><br>
+          <input type="text" class="skills-input" id="skills20"><br>
+          <input type="text" class="skills-input" id="skills21"><br>
+          <input type="text" class="skills-input" id="skills22"><br>
+          <input type="text" class="skills-input" id="skills23"><br>
+          <input type="text" class="skills-input" id="skills24"><br>
+          <input type="text" class="skills-input" id="skills25"><br>
+          <input type="text" class="skills-input" id="skills26"><br>
+          <input type="text" class="skills-input" id="skills27"><br>
+          <input type="text" class="skills-input" id="skills28"><br>
+          <input type="text" class="skills-input" id="skills29"><br>
+          <input type="text" class="skills-input" id="skills30"><br>
+          <input type="text" class="skills-input" id="skills31"><br>
+          <input type="text" class="skills-input" id="skills32"><br>
+          <input type="text" class="skills-input" id="skills33"><br>
+          <input type="text" class="skills-input" id="skills34"><br>
+          <input type="text" class="skills-input" id="skills35"><br>
+          <input type="text" class="skills-input" id="skills36"><br>
+          <input type="text" class="skills-input" id="skills37"><br>
+          <input type="text" class="skills-input" id="skills38"><br>
+          <input type="text" class="skills-input" id="skills39"><br>
+          <input type="text" class="skills-input" id="skills40"><br>
+        </div>
+
+        <div class="skills-input-nv">
+          <h4 >Nv</h4>
+          <input type="text" class="skills-input-nv-box" id="skillsx1"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx2"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx3"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx4"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx5"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx6"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx7"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx8"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx9"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx10"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx11"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx12"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx13"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx14"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx15"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx16"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx17"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx18"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx19"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx20"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx21"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx22"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx23"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx24"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx25"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx26"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx27"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx28"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx29"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx30"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx31"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx32"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx33"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx34"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx35"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx36"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx37"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx38"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx39"><br>
+          <input type="text" class="skills-input-nv-box" id="skillsx40"><br>
+        </div>
+
+        <div class="inventario">
+          <h4 class="inventario-heading">Inventário</h4>
+          <input type="text" class="inventario-input"id="skillsxx1"><br>
+          <input type="text" class="inventario-input"id="skillsxx2"><br>
+          <input type="text" class="inventario-input"id="skillsxx3"><br>
+          <input type="text" class="inventario-input"id="skillsxx4"><br>
+          <input type="text" class="inventario-input"id="skillsxx5"><br>
+          <input type="text" class="inventario-input"id="skillsxx6"><br>
+          <input type="text" class="inventario-input"id="skillsxx7"><br>
+          <input type="text" class="inventario-input"id="skillsxx8"><br>
+          <input type="text" class="inventario-input"id="skillsxx9"><br>
+          <input type="text" class="inventario-input"id="skillsxx10"><br>
+          <input type="text" class="inventario-input"id="skillsxx11"><br>
+          <input type="text" class="inventario-input"id="skillsxx12"><br>
+          <input type="text" class="inventario-input"id="skillsxx13"><br>
+          <input type="text" class="inventario-input"id="skillsxx14"><br>
+          <input type="text" class="inventario-input"id="skillsxx15"><br>
+          <input type="text" class="inventario-input"id="skillsxx16"><br>
+          <input type="text" class="inventario-input"id="skillsxx17"><br>
+          <input type="text" class="inventario-input"id="skillsxx18"><br>
+          <input type="text" class="inventario-input"id="skillsxx19"><br>
+          <input type="text" class="inventario-input"id="skillsxx20"><br>
+          <input type="text" class="inventario-input"id="skillsxx21"><br>
+          <input type="text" class="inventario-input"id="skillsxx22"><br>
+          <input type="text" class="inventario-input"id="skillsxx23"><br>
+          <input type="text" class="inventario-input"id="skillsxx24"><br>
+          <input type="text" class="inventario-input"id="skillsxx25"><br>
+          <input type="text" class="inventario-input"id="skillsxx26"><br>
+          <input type="text" class="inventario-input"id="skillsxx27"><br>
+          <input type="text" class="inventario-input"id="skillsxx28"><br>
+          <input type="text" class="inventario-input"id="skillsxx29"><br>
+          <input type="text" class="inventario-input"id="skillsxx30"><br>
+          <input type="text" class="inventario-input"id="skillsxx31"><br>
+          <input type="text" class="inventario-input"id="skillsxx32"><br>
+          <input type="text" class="inventario-input"id="skillsxx33"><br>
+          <input type="text" class="inventario-input"id="skillsxx34"><br>
+          <input type="text" class="inventario-input"id="skillsxx35"><br>
+          <input type="text" class="inventario-input"id="skillsxx36"><br>
+          <input type="text" class="inventario-input"id="skillsxx37"><br>
+          <input type="text" class="inventario-input"id="skillsxx38"><br>
+          <input type="text" class="inventario-input"id="skillsxx39"><br>
+          <input type="text" class="inventario-input"id="skillsxx40"><br>
+        </div>
+
+      </div>
+
+      <div class="general-info" style="text-align: center;">
+        <h4>Lore, Descrição e Anotações Gerais</h4>
+        <textarea rows="5" cols="50" class="general-input" id="textarea1"></textarea>
+      </div>
+
+      <div class="botoes">
+        <button type="submit" id="salvarBotao">Salvar</button><br>
+        <input type="file" id="carregarArquivo" style="display: none;">
+        <button type="submit" id="carregarBotao">Carregar</button><br>
+      </div>
+
+      <div class="foto-perfil">
+        <img src="imagens/perfil.jpg" style="height: 300px; width: 250px;object-fit: contain;">
+        <h2 style="position: absolute; left: 78px;">Imagem</h2>
+      </div>
+
+  </div>
+
+  <div class="parte-estetica">
+
+    <img src="imagens/02.png"
+    style="position: absolute;
+    top: -62px;
+    left: -13px;"
+    width="780px"
+    height="260px">
+
+    <img src="imagens/01.png"
+    style="position: absolute;
+    top: -40px;
+    left: 770px;"
+    width="310px"
+    height="390px">
+
+    <img src="imagens/02.png"
+    style="position: absolute;
+    top: 200px;
+    left: -13px;"
+    width="720px"
+    height="340px">
+
+    <img class="rotate90dg" src="imagens/02.png"
+    style="position: absolute;
+    top: 535px;
+    left: -100px;"
+    width="1000px"
+    height="1000px">
+
+    <img src="imagens/02.png"
+    style="position: absolute;
+    top: 1515px;
+    left: -20px;"
+    width="790px"
+    height="550px">
+
+    <img src="imagens/02.png"
+    style="position: absolute;
+    top: 2030px;
+    left: -20px;"
+    width="840px"
+    height="650px">
+
+  </div>
+
+  </body>
+  
+</html>

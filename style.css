@@ -1,0 +1,218 @@
+  body{
+    font-family: system-ui;
+    background: rgb(43,43,43);
+    color: white;
+    background-image: url(imagens/background.jpg);
+    background-size: 100%;
+  }
+  
+  .infos-basicas{
+    display: inline;
+  }
+  .info-basica-input{
+    display:inline-block;
+  }
+  .ponto-input{
+    width: 45px;
+  }
+  .infos-pontos{
+    position: absolute;
+    left: 650px;
+    top: 10px;
+    line-height: 0px;
+  }
+  
+  .atributos-primarios{
+    position: absolute;
+  }
+  .atributos-secundarios{
+    position: absolute;
+    left:120px;
+  }
+  .atributo-primario-input-box{
+    position: absolute;
+    left:33px;
+    top: 88px;
+    line-height: 18px;
+  }
+.atributo-primario-input-box-individual{
+    width: 30px;
+}
+.atributo-sec-input-box{
+    position: absolute;
+    left: 157px;
+    top: 88px;
+    line-height: 18px;
+  }
+.atributo-sec-input-box-individual{
+    width: 30px;
+}
+.obs-1{
+    position: absolute;
+    left: 199px;
+    top: 45px;
+}
+
+.ajuste-atributos-derivados{
+    position: absolute;
+    left: 300px;
+}
+.atributo-der-input-box{
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    line-height: 18px;
+}
+.atributo-der-input-box-individual{
+    width: 50px;
+}
+.dmg-obs{
+    position: absolute;
+    left: 120px;
+    top: 123px;
+    line-height: 3px;
+}
+
+.defesa-infos{
+    position: absolute;
+    left: 490px;
+}
+.defesa-infos-input{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    line-height: 18px;
+}
+.defesa-infos-input-box{
+    width: 30px;
+}
+
+.vantagens{
+  position: absolute;
+  top: 1230px;
+}
+.vantagens-heading{
+  text-align: center;
+}
+.vantagens-input{
+  width: 350px;
+}
+
+.desvantagens{
+  position: absolute;
+  top: 1230px;
+  left: 390px;
+}
+.desvantagens-heading{
+  text-align: center;
+}
+.desvantagens-input{
+  width: 350px;
+}
+
+.inventario{
+  position: absolute;
+  top: 250px;
+}
+.inventario-heading{
+  text-align: center;
+}
+.inventario-input{
+  width: 350px;
+}
+
+.skills{
+  position: absolute;
+  top: 250px;
+  left: 390px;
+}
+.skills-heading{
+  text-align: center;
+}
+.skills-input{
+  width: 350px;
+}
+.skills-input-nv{
+  position: absolute;
+  width: 50px;
+  top: 250px;
+  left: 760px;
+}
+.skills-input-nv-box{
+  width: 35px;
+}
+
+.vantagens-desvantagens-skills-inventario{
+  position: absolute;
+  top: 340px;
+}
+
+.armas{
+  position: absolute;
+  top: 280px;
+  line-height: 1;
+  width: 700px;
+}
+.arma-infos{
+  width: 130px;
+}
+.arma1{
+  position: absolute;
+  top: 16px;
+  left: 65px;
+  line-height: 14px;
+}
+.arma2{
+  position: absolute;
+  top: 16px;
+  left: 220px;
+  line-height: 14px;
+}
+.arma3{
+  position: absolute;
+  top: 16px;
+  left: 375px;
+  line-height: 14px;
+}
+.arma4{
+  position: absolute;
+  top: 16px;
+  left: 530px;
+  line-height: 14px;
+}
+
+.general-info{
+  position: absolute;
+  top: 2090px;
+  width: 800px;
+}
+.general-input{
+  width: 800px;
+  height: 500px;
+  font-family: system-ui;
+  font-size: medium;
+}
+
+.botoes{
+  position: absolute;
+  left: 530px;
+  top: 20px;
+}
+
+.foto-perfil{
+  position: absolute;
+  left: 800px;
+  top: 50px;
+}
+
+.parte-funcional{
+  position: relative;
+  z-index: 2;
+}
+.parte-estetica{
+  position: relative;
+  z-index: 1;
+}
+.rotate90dg{
+  transform: rotate(90deg);
+}
